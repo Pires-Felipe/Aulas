@@ -1,14 +1,27 @@
 .his {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-items: center;
    background-image: url(img2.jpg);
+   background-repeat: repeat-y;
+   background-size: 100%;
 }
 
 .geo {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-items: center;
    background-image: url(img5.jpg);
+   background-repeat: repeat-y;
+   background-size: 100%;
 }
+
 
 li {
    display: inline-block;
-   margin: 10px;
+   margin: 15px;
    font-style: none;
    font-weight: bold;
 }  
@@ -16,7 +29,7 @@ li {
 nav a {
    text-decoration: underline;
    font-size: 18px;
-   color: #797979;
+   color: #817d7d;
 } 
 
 ul {
@@ -33,6 +46,7 @@ ul {
 
 a {
    display: flex;
+   width: 45%;
    flex-direction: column;
    text-decoration: none;
 }
@@ -50,19 +64,27 @@ a {
 
 
 .aulas, .questoes {
+   position: relative;
    display: flex;
-   flex-direction: column;
+   flex-direction:column;
    margin: 30px;
    padding: 10px
 }
 
 .questoes {
+   width: 90%;
+   padding-left:3em;
+   margin-top: -330px;
+   margin-left: 45%;
+   position: ;
    margin-block-end: 60%;
 }
 
 
 
 .btv {
+   width: 100%;
+   height: 25px;
    margin: 5px;
    color: black;
    background: #FFAF43;
@@ -71,6 +93,8 @@ a {
 }
 
 .ctv {
+    width: 100%;
+    height: 25px;
     margin: 5px;
     color: black;
     background: #3C713F;
@@ -90,3 +114,34 @@ h2 {
    font-size: 13px;
    margin-block-end: 20px;
 } 
+
+
+@media screen and (max-width: 600px) {
+
+.cont {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+
+}
+
+.questoes {
+   display: inline-block;
+   width: 90%;
+   margin-top: 40px;
+   }
+  
+.aulas {
+   display: inline-block;
+   width: 90%;
+   margin-left: 55%;
+}
+
+
+
+
+
+
+}
